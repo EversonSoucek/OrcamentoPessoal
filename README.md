@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Gerenciador de Orçamento Pessoal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
 
-## Available Scripts
+O **Gerenciador de Orçamento Pessoal** é uma aplicação web desenvolvida com **React** e **Firebase** que permite aos usuários gerenciar suas finanças pessoais. Com este aplicativo, os usuários podem adicionar, editar e excluir receitas e despesas, além de visualizar um resumo atualizado do total de receitas, despesas e o saldo restante.
 
-In the project directory, you can run:
+### Principais Funcionalidades
 
-### `npm start`
+- **Autenticação**: Login com Firebase Authentication via Google ou email/senha.
+- **Gerenciamento de Receitas e Despesas**: Adição, edição e exclusão de entradas de receitas e despesas.
+- **Dashboard**: Visualização do total de receitas, despesas e saldo restante.
+- **Armazenamento**: Dados persistidos no **Firestore** (Firebase).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**
+- **Firebase Authentication**
+- **Firestore**
+- **Firebase Hosting**
+- **React Firebase Hooks**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Acesse a Aplicação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Você pode acessar a aplicação em produção através do seguinte link:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Gerenciador de Orçamento Pessoal](https://orcamentopessoal-665b2.firebaseapp.com/login)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Funcionalidades
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Login com Firebase Authentication
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Os usuários podem fazer login com sua conta do Google ou email/senha. A autenticação é gerenciada pelo **Firebase Authentication**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Gerenciamento de Receitas e Despesas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Receitas**: Os usuários podem adicionar, editar e excluir receitas. Todas as entradas são salvas no Firestore com o `userId` do usuário autenticado.
+- **Despesas**: Funcionalidade semelhante às receitas, mas para despesas.
 
-## Learn More
+### 3. Dashboard
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+O **Dashboard** exibe um resumo dos totais de receitas, despesas e saldo restante em tempo real, consultando os dados armazenados no Firestore.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Firebase Hosting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A aplicação está hospedada no **Firebase Hosting** e pode ser acessada no seguinte link: https://orcamentopessoal-665b2.firebaseapp.com/login
 
-### Analyzing the Bundle Size
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por [Everson](https://github.com/EversonSoucek)
